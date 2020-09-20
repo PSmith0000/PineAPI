@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Schema;
 using Newtonsoft.Json.Serialization;
+using PineAPI.API.JsonObjects;
 using PineAPI.Utils;
 using System;
 using System.Collections.Generic;
@@ -41,13 +42,9 @@ namespace PineAPI.API.Commands
             var _data = Data == null ? JsonString : Data;
             if(_param != null)
             {
-                switch (Name)
+                if(Name == "DeleteNotification" || Name == "ReadNotification")
                 {
-                    case "DeleteNotification":
-                        RequestUri = RequestUri.Replace("{id}", _param[0].ToString());
-                        break;
-                    default:
-                        break;
+                    RequestUri = RequestUri.Replace("{id}", _param[0].ToString());
                 }
             }
             var request = Network.MakeRequest(Config.GateWay, RequestUri, null, httpMethod, _data).Content.ReadAsStringAsync().Result;
@@ -62,6 +59,14 @@ namespace PineAPI.API.Commands
             else if (JsonType == typeof(JsonObjects.Notifications.Notification_Array_Item[]))
             {
                 return (T)Convert.ChangeType(JsonConvert.DeserializeObject(request, JsonType), typeof(JsonObjects.Notifications.Notification_Array_Item[]));
+            }
+            else if (JsonType == typeof(DeviceStatus))
+            {
+                return (T)Convert.ChangeType(JsonConvert.DeserializeObject(request, JsonType), typeof(DeviceStatus));
+            }
+            else if(JsonType == typeof(DeviceType))
+            {
+                return (T)Convert.ChangeType(JsonConvert.DeserializeObject(request, JsonType), typeof(DeviceType));
             }
             return (T)Convert.ChangeType(false, typeof(bool));
         }

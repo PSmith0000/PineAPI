@@ -35,7 +35,14 @@ namespace PineAPI
             Get_All_Notification,
             DeleteAllNotifications,
             Read_All_Notifications,
-            DeleteNotification
+            DeleteNotification,
+            ReadNotification,
+            DispalyedNotification,
+            Reboot,
+            Shutdown,
+            DeviceStatus,
+            GetDeviceType,
+            WIP_DownloadFile,
         }
     }
 }

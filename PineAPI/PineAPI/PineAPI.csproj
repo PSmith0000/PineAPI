@@ -47,6 +47,8 @@
   <ItemGroup>
     <Compile Include="API\JsonObjects\AuthToken.cs" />
     <Compile Include="API\JsonObjects\BooleanResult.cs" />
+    <Compile Include="API\JsonObjects\DeviceStatus.cs" />
+    <Compile Include="API\JsonObjects\DeviceType.cs" />
     <Compile Include="API\JsonObjects\JsonUtils.cs" />
     <Compile Include="API\JsonObjects\Notifications.cs" />
     <Compile Include="Config.cs" />

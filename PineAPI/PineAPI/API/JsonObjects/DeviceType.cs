@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 namespace PineAPI.API.JsonObjects
 {
-    public class BooleanResult
+    public class DeviceType
     {
-        [JsonProperty("success")]
-        public bool Success { get; set; }
+        [JsonProperty]
+        public string device { get; set; }
     }
 }

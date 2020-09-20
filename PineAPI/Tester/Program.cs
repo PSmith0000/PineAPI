@@ -18,7 +18,8 @@ namespace Tester
             Console.WriteLine("Token Set");
             Console.Read();
 
-           
+            api.DoCommand<DeviceType>(PineappleAPI.Commands.GetDeviceType, _DataOpt);
+
             while (true)
             {
 
@@ -34,8 +35,8 @@ namespace Tester
 
         static bool _DataOpt(object data)
         {
-            var RESULT = (BooleanResult)data;
-            Console.WriteLine("Executed: " + RESULT.Success);
+            var RESULT = (DeviceType)data;
+            Console.WriteLine("Executed: " + RESULT.device);
             return false;
         }
     }

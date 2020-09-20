@@ -18,7 +18,15 @@ namespace PineAPI.API.Commands
             {"Get_All_Notification", new Command("Get_All_Notification", "GET", "notifications", typeof(JsonObjects.Notifications.Notification_Array_Item[]))},
             {"DeleteAllNotifications", new Command("DeleteAllNotifications", "DELETE", "notifications", typeof(JsonObjects.BooleanResult)) },
             {"Read_All_Notifications", new Command("Read_All_Notifications", "PUT", "notifications/read", typeof(BooleanResult))},
-            {"DeleteNotification", new Command("DeleteNotification", "DELETE", "notifications/{id}", typeof(BooleanResult), null)}
+            {"DeleteNotification", new Command("DeleteNotification", "DELETE", "notifications/{id}", typeof(BooleanResult))},
+            {"ReadNotification", new Command("ReadNotification", "PUT", "notifications/{id}/read", typeof(BooleanResult)) },
+            {"DispalyedNotification", new Command("DisplayedNotification", "PUT", "notifications/{id}/displayed", typeof(BooleanResult)) },
+
+            {"Reboot", new Command("Reboot", "POST", "reboot", typeof(BooleanResult)) },
+            {"Shutdown", new Command("Shutdown", "POST", "shutdown", typeof(BooleanResult)) },
+            {"DeviceStatus", new Command("DeviceStatus", "GET", "status", typeof(DeviceStatus)) },
+            {"GetDeviceType", new Command("GetDeviceType", "GET", "device", typeof(DeviceType)) },
+            {"DownloadFile", new Command("GetDeviceType", "POST", "download", typeof(BooleanResult)) } //need doc update to complete
         };
 
         /// <summary>
