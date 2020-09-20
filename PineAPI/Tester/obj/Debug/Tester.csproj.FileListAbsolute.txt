@@ -10,3 +10,15 @@ C:\Users\Preston\source\repos\PineAPI\Tester\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Preston\source\repos\PineAPI\Tester\bin\Debug\PineAPI.pdb
 C:\Users\Preston\source\repos\PineAPI\Tester\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Preston\source\repos\PineAPI\Tester\obj\Debug\Tester.csproj.CopyComplete
+C:\Users\Preston\Documents\GitHub\PineAPI\PineAPI\Tester\bin\Debug\Tester.exe.config
+C:\Users\Preston\Documents\GitHub\PineAPI\PineAPI\Tester\bin\Debug\Tester.exe
+C:\Users\Preston\Documents\GitHub\PineAPI\PineAPI\Tester\bin\Debug\Tester.pdb
+C:\Users\Preston\Documents\GitHub\PineAPI\PineAPI\Tester\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Preston\Documents\GitHub\PineAPI\PineAPI\Tester\bin\Debug\PineAPI.dll
+C:\Users\Preston\Documents\GitHub\PineAPI\PineAPI\Tester\bin\Debug\PineAPI.pdb
+C:\Users\Preston\Documents\GitHub\PineAPI\PineAPI\Tester\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Preston\Documents\GitHub\PineAPI\PineAPI\Tester\obj\Debug\Tester.csprojAssemblyReference.cache
+C:\Users\Preston\Documents\GitHub\PineAPI\PineAPI\Tester\obj\Debug\Tester.csproj.CoreCompileInputs.cache
+C:\Users\Preston\Documents\GitHub\PineAPI\PineAPI\Tester\obj\Debug\Tester.csproj.CopyComplete
+C:\Users\Preston\Documents\GitHub\PineAPI\PineAPI\Tester\obj\Debug\Tester.exe
+C:\Users\Preston\Documents\GitHub\PineAPI\PineAPI\Tester\obj\Debug\Tester.pdb

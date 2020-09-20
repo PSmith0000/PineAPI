@@ -39,6 +39,17 @@ namespace PineAPI.API.Commands
         internal T Execute<T>(string JsonString = null, object[] _param = null)
         {
             var _data = Data == null ? JsonString : Data;
+            if(_param != null)
+            {
+                switch (Name)
+                {
+                    case "DeleteNotification":
+                        RequestUri = RequestUri.Replace("{id}", _param[0].ToString());
+                        break;
+                    default:
+                        break;
+                }
+            }
             var request = Network.MakeRequest(Config.GateWay, RequestUri, null, httpMethod, _data).Content.ReadAsStringAsync().Result;
             if(JsonType == typeof(JsonObjects.AuthToken))
             {

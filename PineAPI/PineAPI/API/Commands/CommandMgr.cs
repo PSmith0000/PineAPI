@@ -17,7 +17,8 @@ namespace PineAPI.API.Commands
             {"SendNotification", new Command("SendNotification", "PUT", "notifications", typeof(JsonObjects.BooleanResult)) },
             {"Get_All_Notification", new Command("Get_All_Notification", "GET", "notifications", typeof(JsonObjects.Notifications.Notification_Array_Item[]))},
             {"DeleteAllNotifications", new Command("DeleteAllNotifications", "DELETE", "notifications", typeof(JsonObjects.BooleanResult)) },
-            {"Read_All_Notifications", new Command("Read_All_Notifications", "PUT", "notifications/read", typeof(BooleanResult))}
+            {"Read_All_Notifications", new Command("Read_All_Notifications", "PUT", "notifications/read", typeof(BooleanResult))},
+            {"DeleteNotification", new Command("DeleteNotification", "DELETE", "notifications/{id}", typeof(BooleanResult), null)}
         };
 
         /// <summary>

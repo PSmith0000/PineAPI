@@ -34,7 +34,8 @@ namespace PineAPI
             SendNotification,
             Get_All_Notification,
             DeleteAllNotifications,
-            Read_All_Notifications
+            Read_All_Notifications,
+            DeleteNotification
         }
     }
 }

@@ -18,9 +18,7 @@ namespace Tester
             Console.WriteLine("Token Set");
             Console.Read();
 
-
-            
-
+           
             while (true)
             {
 
