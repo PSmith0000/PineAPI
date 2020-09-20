@@ -1,0 +1,9 @@
+C:\Users\Preston\source\repos\PineAPI\PineAPI\bin\Debug\PineAPI.dll
+C:\Users\Preston\source\repos\PineAPI\PineAPI\bin\Debug\PineAPI.pdb
+C:\Users\Preston\source\repos\PineAPI\PineAPI\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Preston\source\repos\PineAPI\PineAPI\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Preston\source\repos\PineAPI\PineAPI\obj\Debug\PineAPI.csprojAssemblyReference.cache
+C:\Users\Preston\source\repos\PineAPI\PineAPI\obj\Debug\PineAPI.csproj.CoreCompileInputs.cache
+C:\Users\Preston\source\repos\PineAPI\PineAPI\obj\Debug\PineAPI.csproj.CopyComplete
+C:\Users\Preston\source\repos\PineAPI\PineAPI\obj\Debug\PineAPI.dll
+C:\Users\Preston\source\repos\PineAPI\PineAPI\obj\Debug\PineAPI.pdb
