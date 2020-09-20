@@ -26,7 +26,8 @@ namespace PineAPI.API.Commands
             {"Shutdown", new Command("Shutdown", "POST", "shutdown", typeof(BooleanResult)) },
             {"DeviceStatus", new Command("DeviceStatus", "GET", "status", typeof(DeviceStatus)) },
             {"GetDeviceType", new Command("GetDeviceType", "GET", "device", typeof(DeviceType)) },
-            {"DownloadFile", new Command("GetDeviceType", "POST", "download", typeof(BooleanResult)) } //need doc update to complete
+            {"_DownloadFile", new Command("GetDeviceType", "POST", "download", typeof(BooleanResult)) }, //need doc update to complete
+            {"GetStats", new Command("GetStats", "GET", "dashboard/cards", typeof(Cards)) },
         };
 
         /// <summary>

@@ -18,7 +18,7 @@ namespace Tester
             Console.WriteLine("Token Set");
             Console.Read();
 
-            api.DoCommand<DeviceType>(PineappleAPI.Commands.GetDeviceType, _DataOpt);
+            api.DoCommand<Cards>(PineappleAPI.Commands.GetStats, _DataOpt);
 
             while (true)
             {
@@ -35,8 +35,8 @@ namespace Tester
 
         static bool _DataOpt(object data)
         {
-            var RESULT = (DeviceType)data;
-            Console.WriteLine("Executed: " + RESULT.device);
+            var RESULT = (Cards)data;
+            Console.WriteLine("Executed: " + RESULT.DiskUsage.RootUsage);
             return false;
         }
     }

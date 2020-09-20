@@ -68,6 +68,10 @@ namespace PineAPI.API.Commands
             {
                 return (T)Convert.ChangeType(JsonConvert.DeserializeObject(request, JsonType), typeof(DeviceType));
             }
+            else if (JsonType == typeof(Cards))
+            {
+                return (T)Convert.ChangeType(JsonConvert.DeserializeObject(request, JsonType), typeof(Cards));
+            }
             return (T)Convert.ChangeType(false, typeof(bool));
         }
     }

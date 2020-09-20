@@ -42,7 +42,8 @@ namespace PineAPI
             Shutdown,
             DeviceStatus,
             GetDeviceType,
-            WIP_DownloadFile,
+            DownloadFile,
+            GetStats
         }
     }
 }
