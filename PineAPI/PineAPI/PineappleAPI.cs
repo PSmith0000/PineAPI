@@ -43,7 +43,12 @@ namespace PineAPI
             DeviceStatus,
             GetDeviceType,
             DownloadFile,
-            GetStats
+            GetStats,
+            GetPineAP_Settings,
+            UpdatePineAP_Settings,
+            GetSSIDs,
+            Delete_All_SSIDs,
+            AddSSID
         }
     }
 }

@@ -6,6 +6,7 @@ using PineAPI.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Channels;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -72,7 +73,15 @@ namespace PineAPI.API.Commands
             {
                 return (T)Convert.ChangeType(JsonConvert.DeserializeObject(request, JsonType), typeof(Cards));
             }
-            return (T)Convert.ChangeType(false, typeof(bool));
+            else if (JsonType == typeof(PineAP))
+            {
+                return (T)Convert.ChangeType(JsonConvert.DeserializeObject(request, JsonType), typeof(PineAP));
+            }
+            else if (JsonType == typeof(ServiceSetIDs))
+            {
+                return (T)Convert.ChangeType(JsonConvert.DeserializeObject(request, JsonType), typeof(ServiceSetIDs));
+            }
+            return (T)Convert.ChangeType(true, typeof(bool));
         }
     }
 }

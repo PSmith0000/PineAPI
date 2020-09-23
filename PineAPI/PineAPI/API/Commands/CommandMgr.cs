@@ -26,8 +26,13 @@ namespace PineAPI.API.Commands
             {"Shutdown", new Command("Shutdown", "POST", "shutdown", typeof(BooleanResult)) },
             {"DeviceStatus", new Command("DeviceStatus", "GET", "status", typeof(DeviceStatus)) },
             {"GetDeviceType", new Command("GetDeviceType", "GET", "device", typeof(DeviceType)) },
-            {"_DownloadFile", new Command("GetDeviceType", "POST", "download", typeof(BooleanResult)) }, //need doc update to complete
+            {"DownloadFile", new Command("DownloadFile", "POST", "download", typeof(BooleanResult)) }, //need doc update to complete
             {"GetStats", new Command("GetStats", "GET", "dashboard/cards", typeof(Cards)) },
+            {"GetPineAP_Settings", new Command("GetPineAP_Settings", "GET", "pineap/settings", typeof(PineAP)) },
+            {"UpdatePineAP_Settings", new Command("UpdatePineAP_Settings", "PUT", "pineap/settings", typeof(BooleanResult)) },
+            {"GetSSIDs", new Command("GetSSIDs", "GET", "pineap/ssids", typeof(ServiceSetIDs)) },
+            {"Delete_All_SSIDs", new Command("Delete_All_SSIDs", "DELETE", "pineap/ssids", typeof(BooleanResult)) },
+            {"AddSSID", new Command("AddSSID", "PUT", "pineap/ssids/ssid", typeof(BooleanResult)) }
         };
 
         /// <summary>
