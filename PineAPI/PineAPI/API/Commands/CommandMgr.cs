@@ -15,7 +15,7 @@ namespace PineAPI.API.Commands
         internal static Dictionary<string, Command> Commands = new Dictionary<string, Command>() {
             {"LOGIN", new Command("Login", "POST", "login", typeof(JsonObjects.AuthToken), Config.LoginCombo)},
             {"SendNotification", new Command("SendNotification", "PUT", "notifications", typeof(JsonObjects.BooleanResult)) },
-            {"Get_All_Notification", new Command("Get_All_Notification", "GET", "notifications", typeof(JsonObjects.Notifications.Notification_Array_Item[]))},
+            {"Get_All_Notification", new Command("Get_All_Notification", "GET", "notifications", typeof(JsonObjects.Notifications.NotificationEntry[]))},
             {"DeleteAllNotifications", new Command("DeleteAllNotifications", "DELETE", "notifications", typeof(JsonObjects.BooleanResult)) },
             {"Read_All_Notifications", new Command("Read_All_Notifications", "PUT", "notifications/read", typeof(BooleanResult))},
             {"DeleteNotification", new Command("DeleteNotification", "DELETE", "notifications/{id}", typeof(BooleanResult))},
@@ -32,7 +32,10 @@ namespace PineAPI.API.Commands
             {"UpdatePineAP_Settings", new Command("UpdatePineAP_Settings", "PUT", "pineap/settings", typeof(BooleanResult)) },
             {"GetSSIDs", new Command("GetSSIDs", "GET", "pineap/ssids", typeof(ServiceSetIDs)) },
             {"Delete_All_SSIDs", new Command("Delete_All_SSIDs", "DELETE", "pineap/ssids", typeof(BooleanResult)) },
-            {"AddSSID", new Command("AddSSID", "PUT", "pineap/ssids/ssid", typeof(BooleanResult)) }
+            {"AddSSID", new Command("AddSSID", "PUT", "pineap/ssids/ssid", typeof(BooleanResult)) },
+            {"DeleteSSID", new Command("DeleteSSID", "DELETE", "pineap/ssids/ssid", typeof(BooleanResult)) },
+            {"GetCapturedHandshakes", new Command("GetCapturedHandshakes", "GET", "pineap/handshakes", typeof(Handshakes)) }
+            
         };
 
         /// <summary>

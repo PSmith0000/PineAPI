@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO.Ports;
 using System.Linq;
 using System.Runtime.Remoting.Channels;
 using System.Text;
@@ -17,8 +18,7 @@ namespace Tester
             api.DoCommand<PineAPI.API.JsonObjects.AuthToken>(PineappleAPI.Commands.LOGIN, DataOpt);
             Console.WriteLine("Token Set");
             Console.Read();
-          
-
+            api.DoCommand<Handshakes>(PineappleAPI.Commands.GetCapturedHandshakes, __DataOpt);
             while (true)
             {
 
@@ -41,8 +41,8 @@ namespace Tester
 
         static bool __DataOpt(object data)
         {
-            var RESULT = (BooleanResult)data;
-            Console.WriteLine("Executed: " + RESULT.Success);
+            var RESULT = (Handshakes)data;
+            Console.WriteLine("Executed: " + RESULT.HandShakes.Length);
             return false;
         }
     }

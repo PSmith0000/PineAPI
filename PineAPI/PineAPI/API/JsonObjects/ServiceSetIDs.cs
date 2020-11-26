@@ -23,5 +23,11 @@ namespace PineAPI.API.JsonObjects
 
         [JsonProperty]
         public string ssid { get; set; }
+
+
+        public string ToJson()
+        {
+            return JsonConvert.SerializeObject(this);
+        }
     }
 }

@@ -22,7 +22,7 @@ namespace PineAPI.API.JsonObjects
             internal string Message { get; set; }
         }
 
-        public class Notification_Array_Item
+        public class NotificationEntry
         {
             [JsonProperty("id")]
             public long Id { get; set; }

@@ -51,6 +51,7 @@
     <Compile Include="API\JsonObjects\Cards.cs" />
     <Compile Include="API\JsonObjects\DeviceStatus.cs" />
     <Compile Include="API\JsonObjects\DeviceType.cs" />
+    <Compile Include="API\JsonObjects\Handshakes.cs" />
     <Compile Include="API\JsonObjects\JsonUtils.cs" />
     <Compile Include="API\JsonObjects\Notifications.cs" />
     <Compile Include="API\JsonObjects\PineAP.cs" />

@@ -57,9 +57,9 @@ namespace PineAPI.API.Commands
             {
                 return (T)Convert.ChangeType(JsonConvert.DeserializeObject(request, JsonType), typeof(JsonObjects.BooleanResult));
             }
-            else if (JsonType == typeof(JsonObjects.Notifications.Notification_Array_Item[]))
+            else if (JsonType == typeof(JsonObjects.Notifications.NotificationEntry[]))
             {
-                return (T)Convert.ChangeType(JsonConvert.DeserializeObject(request, JsonType), typeof(JsonObjects.Notifications.Notification_Array_Item[]));
+                return (T)Convert.ChangeType(JsonConvert.DeserializeObject(request, JsonType), typeof(JsonObjects.Notifications.NotificationEntry[]));
             }
             else if (JsonType == typeof(DeviceStatus))
             {
@@ -80,6 +80,10 @@ namespace PineAPI.API.Commands
             else if (JsonType == typeof(ServiceSetIDs))
             {
                 return (T)Convert.ChangeType(JsonConvert.DeserializeObject(request, JsonType), typeof(ServiceSetIDs));
+            }
+            else if (JsonType == typeof(Handshakes))
+            {
+                return (T)Convert.ChangeType(JsonConvert.DeserializeObject(request, JsonType), typeof(Handshakes));
             }
             return (T)Convert.ChangeType(true, typeof(bool));
         }

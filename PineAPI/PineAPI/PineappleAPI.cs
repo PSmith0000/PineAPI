@@ -48,7 +48,9 @@ namespace PineAPI
             UpdatePineAP_Settings,
             GetSSIDs,
             Delete_All_SSIDs,
-            AddSSID
+            AddSSID,
+            DeleteSSID,
+            GetCapturedHandshakes
         }
     }
 }
